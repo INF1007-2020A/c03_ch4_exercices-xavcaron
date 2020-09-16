@@ -12,12 +12,15 @@ def remove_third_char(string: str) -> str:
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    newstring2= string[:3]+ 'b'+string[4:]
-    return ""
+    old_char_index=string.find(old_char)
+    return string[:old_char_index]+ new_char +string[old_char_index+1:]
 
 
 def get_nb_char(string: str, char: str) -> int:
-    return 0
+    char=0
+    for character in string:
+        char+=1
+    return char
 
 
 def get_nb_words(sentence: str) -> int:
