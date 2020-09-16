@@ -6,13 +6,13 @@ def is_even_len(string: str) -> bool:
     return len(string)%2==0
 
 
-
 def remove_third_char(string: str) -> str:
     newstring=string[:3]+string[4:]
     return newstring
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
+    newstring2= string[:3]+ 'b'+string[4:]
     return ""
 
 
