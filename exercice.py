@@ -3,8 +3,7 @@
 
 
 def is_even_len(string: str) -> bool:
-    #testing
-    jyut
+    
     return False
 
 
