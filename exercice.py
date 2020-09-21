@@ -17,11 +17,11 @@ def replace_char(string: str, old_char: str, new_char: str) -> str:
 
 
 def get_nb_char(string: str, char: str) -> int:
-    count=0
+    counter=0
     for character in string:
         if character==char:
-            count=count+1
-    return count
+            counter+=1
+    return counter
 
 def get_nb_words(sentence: str) -> int:
     s=sentence.split()
